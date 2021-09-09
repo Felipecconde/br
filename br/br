@@ -1,50 +1,63 @@
 #!/bin/bash
-
-input=$*
-
-rm "$HOME/.br/cache/*" > /dev/null 2>&1
-
-if [ "$input" == "" ] ;
-then
-echo '[X] ERRO! | ERROR! | ¡ERROR!'
+cd ~
 echo
-echo '[PT]: Você precisa digitar um argumento. Digite "br --help" para obter ajuda.'
+echo '[PT] Insira a sua senha para inciar a instalação do BashRun.'
 echo
-echo '[EN]: You need to type an argument. Type "br --help" to get help.'
+echo '[EN] Enter your password to start the installation of BashRun.'
 echo
-echo '[ES]: Debes ingresar un argumento. Escriba "br --help" para obtener ayuda.'
-exit
-fi
-
-if [ "$input" == "--ajuda" ] || [ "$input" == "--help" ] || [ "$input" == "-h" ] || [ "$input" == "--ayuda" ] || [ "$input" == "-?" ] ;
-then
-echo '[?] AJUDA | HELP | AYUDA'
+echo '[ES] Ingrese su contraseña para comenzar la instalación de BashRun.'
 echo
-echo '[PT]: Acesse este link para obter ajuda: https://github.com/Felipecconde/br/raw/main/help/Ajuda%20Bashrun%20em%20Portugu%C3%AAs.mp4'
+echo '>---> SUDO'
+sudo sleep 0
+sleep 3
 echo
-echo '[EN]: Go to this link for help: https://github.com/Felipecconde/br/blob/main/help/Help%20Bashrun%20in%20English.mp4'
+echo '[PT] Baixando e instalando o BashRun...'
 echo
-echo '[ES]: Vaya a este link para obtener ayuda: https://github.com/Felipecconde/br/raw/main/help/Ayuda%20Bashrun%20en%20Espa%C3%B1ol.mp4'
+echo '[EN] Descargando e instalando BashRun...'
+echo
+echo '[ES] Downloading and installing BashRun...'
+echo
+sleep 1
+echo '  | | |'
+echo
+sudo apt install git > /dev/null 2>&1
+sleep 0.1
+echo '   \ /'
+echo '    V'
+sleep 0.1
+echo '    |'
+rm $HOME/Downloads/.br-pkg > /dev/null 2>&1
+sleep 0.1
+echo '    |'
+sleep 0.1
+echo '    |'
+git clone https://github.com/Felipecconde/br $HOME/Downloads/.br-pkg > /dev/null 2>&1
+sleep 0.1
+echo '    |'
+sleep 0.1
+echo '    |'
+sudo chmod +x $HOME/Downloads/.br-pkg/br/br > /dev/null 2>&1
+sleep 0.1
+echo '    |'
+sleep 0.1
+echo '    |'
+sudo mv '$HOME/Downloads/.br-pkg/br/br' '/usr/bin/br' > /dev/null 2>&1
+rm -rf $HOME/Downloads/.br-pkg > /dev/null 2>&1
+sleep 0.1
+echo '    |'
+sleep 0.1
+echo '   _|_'
+echo ' .-\V/-.'
+echo '|  _V_  |'
+echo '| |(·)| |'
+echo "'._---_.'"
+echo '   """ '
+echo
+sleep 1
+echo '[PT] O BashRun foi instalado no seu sistema com sucesso! Digite "br --help" para obter ajuda com o BashRun. Para desinstalar o BashRun, execute "br bruninstall", "br uninstall" ou "br remove".'
+echo
+echo '[EN] BashRun has been successfully installed on your system! Type "br --help" to get help with BashRun. To uninstall BashRun, run "br bruninstall", "br uninstall" or "br remove".'
+echo
+echo '[ES] ¡BashRun se ha instalado con éxito en su sistema! Escriba "br --help" para obtener ayuda con BashRun. Para desinstalar BashRun, ejecute "br bruninstall", "br uninstall" o "br remove".'
+echo
 exit
-fi
-
-if [ "$1" == "-v" ] || [ "$1" == "--view" ] ;
-then
-curl -s --max-redirs 10 tinyurl.com/brl-$2 -L | tr -d "\r"
-exit
-fi
-
-if [ "$1" == "-vu" ] || [ "$1" == "--view-url" ] ;
-then
-curl -s --max-redirs 10 $2 -L | tr -d "\r"
-exit
-fi
-
-if [ "$1" == "-u" ] || [ "$1" == "--url" ] ;
-then
-bash <(curl -s --max-redirs 10 $2 -L | tr -d "\r") $3 $4 $5 $6 $7 $8 $9
-exit
-else
-bash <(curl -s --max-redirs 10 tinyurl.com/brl-$1 -L | tr -d "\r") $2 $3 $4 $5 $6 $7 $8 $9
-exit
-fi
