@@ -41,7 +41,7 @@ sleep 0.1
 echo '    |'
 sleep 0.1
 echo '    |'
-sudo mv '$HOME/Downloads/.br-pkg/br/br' '/usr/bin/br' > /dev/null 2>&1
+sudo mv $HOME/Downloads/.br-pkg/br/br /usr/bin/br > /dev/null 2>&1
 rm -rf $HOME/Downloads/.br-pkg > /dev/null 2>&1
 sleep 0.1
 echo '    |'
