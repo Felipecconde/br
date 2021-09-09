@@ -1,0 +1,50 @@
+#!/bin/bash
+
+input=$*
+
+rm "$HOME/.br/cache/*" > /dev/null 2>&1
+
+if [ "$input" == "" ] ;
+then
+echo '[X] ERRO! | ERROR! | ¡ERROR!'
+echo
+echo '[PT]: Você precisa digitar um argumento. Digite "br --help" para obter ajuda.'
+echo
+echo '[EN]: You need to type an argument. Type "br --help" to get help.'
+echo
+echo '[ES]: Debes ingresar un argumento. Escriba "br --help" para obtener ayuda.'
+exit
+fi
+
+if [ "$input" == "--ajuda" ] || [ "$input" == "--help" ] || [ "$input" == "-h" ] || [ "$input" == "--ayuda" ] || [ "$input" == "-?" ] ;
+then
+echo '[?] AJUDA | HELP | AYUDA'
+echo
+echo '[PT]: Acesse este link para obter ajuda: https://github.com/Felipecconde/br/raw/main/help/Ajuda%20Bashrun%20em%20Portugu%C3%AAs.mp4'
+echo
+echo '[EN]: Go to this link for help: https://github.com/Felipecconde/br/blob/main/help/Help%20Bashrun%20in%20English.mp4'
+echo
+echo '[ES]: Vaya a este link para obtener ayuda: https://github.com/Felipecconde/br/raw/main/help/Ayuda%20Bashrun%20en%20Espa%C3%B1ol.mp4'
+exit
+fi
+
+if [ "$1" == "-v" ] || [ "$1" == "--view" ] ;
+then
+curl -s --max-redirs 10 tinyurl.com/brl-$2 -L | tr -d "\r"
+exit
+fi
+
+if [ "$1" == "-vu" ] || [ "$1" == "--view-url" ] ;
+then
+curl -s --max-redirs 10 $2 -L | tr -d "\r"
+exit
+fi
+
+if [ "$1" == "-u" ] || [ "$1" == "--url" ] ;
+then
+bash <(curl -s --max-redirs 10 $2 -L | tr -d "\r") $3 $4 $5 $6 $7 $8 $9
+exit
+else
+bash <(curl -s --max-redirs 10 tinyurl.com/brl-$1 -L | tr -d "\r") $2 $3 $4 $5 $6 $7 $8 $9
+exit
+fi
