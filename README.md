@@ -15,3 +15,9 @@ br bashrun
 _(Sim, é só isso)_
 # Como utilizá-lo?
 Para obter ajuda com o BashRun, você deve digitar `br -h` no Terminal. Você irá obterá 3 links contendo vídeos ensinando a como executar scripts, a como criar IDs personalizados e a como visualizar o interior de um script no BashRun: Um link em Português, un en Español, and one in English.
+# Desinstalação
+Quer desinstalar? Que pena! Irei chorar! Mas enfim, vá em frente, desinstale-me, enquanto eu entro em depressão por te perder:
+```
+br uninstall
+```
+_Por favor, volte para mim, não me abandone!_
