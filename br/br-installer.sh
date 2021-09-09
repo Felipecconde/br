@@ -13,9 +13,9 @@ sleep 3
 echo
 echo '[PT] Baixando e instalando o BashRun...'
 echo
-echo '[EN] Descargando e instalando BashRun...'
+echo '[EN] Downloading and installing BashRun...'
 echo
-echo '[ES] Downloading and installing BashRun...'
+echo '[ES] Descargando e instalando BashRun...'
 echo
 sleep 1
 echo '  | | |'
