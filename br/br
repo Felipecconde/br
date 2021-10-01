@@ -22,11 +22,30 @@ echo '[?] AJUDA | HELP | AYUDA'
 echo
 echo 'BashRun v2.0 (Batata)'
 echo
-echo '[PT]: Acesse este link para obter ajuda: https://github.com/Felipecconde/br/raw/main/help/Ajuda%20Bashrun%20em%20Portugu%C3%AAs.mp4'
+echo '| The text help is only avaiable in english language!'
 echo
-echo '[EN]: Go to this link for help: https://github.com/Felipecconde/br/blob/main/help/Help%20Bashrun%20in%20English.mp4'
+echo '| ARGUMENT           DESCRIPTION'
 echo
-echo '[ES]: Vaya a este link para obtener ayuda: https://github.com/Felipecconde/br/raw/main/help/Ayuda%20Bashrun%20en%20Espa%C3%B1ol.mp4'
+echo '-v                 View the content of a script using it BRID'
+echo '-vu                View the content of a script using it URL'
+echo '-u                 Use a URL instead of a BRID to execute a script'
+echo
+echo 'ARGUMENT SYNTAX: "br" + argument + script'
+echo
+echo '| HOW TO CREATE A SCRIPT BASHRUN ID'
+echo
+echo '1 - Enter on rentry.co website with your browser'
+echo '2 - Paste or write your code on it'
+echo '3 - Choice your personal secure password and write it on "Custom edit code" camp. DO NOT FORGET IT!!!'
+echo '4 - Type "brl_" on the "Custom url" camp and after this, choice and write your BRID. Example: The custom url for the "example" BRID are "brl_example".'
+echo '5 - Click on "Export" and select "Raw"'
+echo '6 - All is done! You can edit your script later using the rentry URL and your custom edit code. Your BRID is ready to use, and it is everything what goes after "brl_" on the custom url. Type "br" + your BRID, on your terminal, and watch the script running inside it. Enjoy!'
+echo
+echo '| Do you need more help? Here is some OLD tutorials made by Felipecconde to teach you how to use BashRun. Please, note that all of they are old and not updated! (For example, BashRun stopped using TinyUrl.Com)'
+echo
+echo '[PT]: VELHO: Acesse este link para obter ajuda: https://github.com/Felipecconde/br/raw/main/help/Ajuda%20Bashrun%20em%20Portugu%C3%AAs.mp4'
+echo '[EN]: OLD: Go to this link for help: https://github.com/Felipecconde/br/blob/main/help/Help%20Bashrun%20in%20English.mp4'
+echo '[ES]: VIEJO: Vaya a este link para obtener ayuda: https://github.com/Felipecconde/br/raw/main/help/Ayuda%20Bashrun%20en%20Espa%C3%B1ol.mp4'
 exit
 fi
 
