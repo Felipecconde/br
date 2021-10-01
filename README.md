@@ -1,23 +1,24 @@
-_(**/!\ BAD AND GOOD NEWS FOR YOU THAT SPEAKS ENGLISH AND/OR SPANISH:** The bad news is that you will need to use a translator to translate this page, sorry about this, however this is necessary so that this page does not become polluted. The good news are that the BashRun program are avaiable for you in Portuguese, English and Spanish. Also, help videos are avaiable for English and Spanish speakers too, just type `br -h` after installing BashRun to get those help videos. Just download it and enjoy on your favorite language :D)_
+_(**/!\ THIS PAGE IS ONLY AVAIABLE ON ENGLISH, BUT THE BASHRUN HAVE BOOTH ENGLISH, PORTUGUESE AND SPANISH TRANSLATION ON IT!**)_
 # BashRun
-O BashRun (`br`) é um programa báshttps://tinyurl.com/ico designado para executar scripts bash, assim como o próprio nome sugere, sem necessidade de baixá-los, e ainda, criando um ID personalizado para executá-los com apenas uma palavra ao invés de uma URL (Assim como no APT - Você não precisa da localização do pacote .DEB para instalá-lo como no dpkg, você apenas precisa do nome do pacote). Ele pode ser utilizado para facilitar scripts de instalação de programas e jogos, scripts de instalação, e entre outras ferramentas úteis. Ele foi totalmente construido com ferramentas nativas do Linux, como Shell Script e curl. Suas principais funções estão entre a possibilidade de execução de scripts a partir da web com um ID personalizado ou uma URL sem necessidade de baixá-los e a possibilidade de visualizar o interior de scripts hospedados na web antes de executá-los.
-# Instalação
-Para instalar o BashRun, apenas execute o comando abaixo no seu Terminal (Eu sei, código assustador. Mas se acalme, você só vai precisar fazer isso uma vez.):
+BashRun (`br`) is a basic program made for execute bash scripts without needing download them, and too, creating a custom ID to execute it with only one word insted of the URL (Like on the APT - You don't need the .DEB package path to install it like on the dpkg, you just need the package name). It can be used to simplify programs and games installation scripts, scripts in general and another cool things. Please, consider that BashRun was only tested on **UBUNTU**-based distros. With BashRun, you can execute scripts with a custom ID or a URL without needing to install scripts, and you have too the possibillity of viewing inside of scripts stored on web before executing it. Basically, BashRun works like Arch's AUR, but it can run normal scripts too insted of installing packages only.
+# Install
+To install BashRun, just execute the followed command on your Terminal (I know, scary code, but relax, you will just need to do it one time.):
 ```
 sudo apt -y install git && rm -rf $HOME/Downloads/br && git clone https://github.com/Felipecconde/br $HOME/Downloads/br && sudo chmod +x $HOME/Downloads/br/br/br-installer.sh && bash $HOME/Downloads/br/br/br-installer.sh && rm -rf $HOME/Downloads/br
 ```
 <br>
 
-_Você já tem o BashRun instalado e apenas deseja atualizá-lo? Então, sugiro que esta simples, humilde e **poderosa** linha de código seja o ideal para você:_
+_Do you already have BashRun installed and just need to update-it? Then, type this **powerful** code line:_
 ```
-br bashrun
+br update
 ```
-_(Sim, é só isso)_
-# Como utilizá-lo?
-Para obter ajuda com o BashRun, você deve digitar `br -h` no Terminal. Você irá obterá 3 links contendo vídeos ensinando a como executar scripts, a como criar IDs personalizados e a como visualizar o interior de um script no BashRun: Um link em Português, un en Español, and one in English.
-# Desinstalação
-Quer desinstalar? Que pena! Irei chorar! Mas enfim, vá em frente, desinstale-me, enquanto eu entro em depressão por te perder:
+_(Yes, it's just it)_
+# How to use it
+To get help with BashRun, type `br -h` in the Terminal. It's just it, enjoy :)
+# Uninstall
+Do you want to uninstall it? Sad! :( I will cry! Go, uninstall-me, while I enter in a depression because I lose you:
 ```
 br uninstall
 ```
-_Por favor, volte para mim, não me abandone!_
+_─ "Please, do not leave me, my dear!"_
+                            _~BashRun_
