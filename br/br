@@ -20,7 +20,7 @@ if [ "$input" == "--ajuda" ] || [ "$input" == "--help" ] || [ "$input" == "-h" ]
 then
 echo '[?] AJUDA | HELP | AYUDA'
 echo
-echo 'BashRun v1.0 (Araraero)'
+echo 'BashRun v2.0 (Batata)'
 echo
 echo '[PT]: Acesse este link para obter ajuda: https://github.com/Felipecconde/br/raw/main/help/Ajuda%20Bashrun%20em%20Portugu%C3%AAs.mp4'
 echo
@@ -32,7 +32,7 @@ fi
 
 if [ "$1" == "-v" ] || [ "$1" == "--view" ] ;
 then
-curl -s --max-redirs 10 tinyurl.com/brl-$2 -L | tr -d "\r"
+curl -s --max-redirs 10 rentry.co/brl_$2 -L | tr -d "\r"
 exit
 fi
 
@@ -47,6 +47,6 @@ then
 bash <(curl -s --max-redirs 10 $2 -L | tr -d "\r") $3 $4 $5 $6 $7 $8 $9
 exit
 else
-bash <(curl -s --max-redirs 10 tinyurl.com/brl-$1 -L | tr -d "\r") $2 $3 $4 $5 $6 $7 $8 $9
+bash <(curl -s --max-redirs 10 rentry.co/brl_$1/raw -L | tr -d "\r") $2 $3 $4 $5 $6 $7 $8 $9
 exit
 fi
