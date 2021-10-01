@@ -32,7 +32,7 @@ fi
 
 if [ "$1" == "-v" ] || [ "$1" == "--view" ] ;
 then
-curl -s --max-redirs 10 rentry.co/brl_$2 -L | tr -d "\r"
+curl -s --max-redirs 10 rentry.co/brl_$2/raw -L | tr -d "\r"
 exit
 fi
 
