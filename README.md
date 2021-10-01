@@ -1,6 +1,7 @@
-_(**/!\ THIS PAGE IS ONLY AVAIABLE ON ENGLISH, BUT THE BASHRUN HAVE BOOTH ENGLISH, PORTUGUESE AND SPANISH TRANSLATION ON IT!**)_
+_(**⚠️ THIS PAGE IS ONLY AVAIABLE ON ENGLISH, BUT THE BASHRUN HAVE BOOTH ENGLISH, PORTUGUESE AND SPANISH TRANSLATION ON IT!**)_
 # BashRun
 BashRun (`br`) is a basic program made for execute bash scripts without needing download them, and too, creating a custom ID to execute it with only one word insted of the URL (Like on the APT - You don't need the .DEB package path to install it like on the dpkg, you just need the package name). It can be used to simplify programs and games installation scripts, scripts in general and another cool things. Please, consider that BashRun was only tested on **UBUNTU**-based distros. With BashRun, you can execute scripts with a custom ID or a URL without needing to install scripts, and you have too the possibillity of viewing inside of scripts stored on web before executing it. Basically, BashRun works like Arch's AUR, but it can run normal scripts too insted of installing packages only.
+**BashRun version:** Batata (2.0)
 # Install
 To install BashRun, just execute the followed command on your Terminal (I know, scary code, but relax, you will just need to do it one time.):
 ```
